@@ -10,7 +10,9 @@ shinyUI(pageWithSidebar(
                            selected = FALSE),
         withMathJax(),
         sliderInput("year", 'Time passed in Myr', 
-                    value = 12, min = 0, max = 24, step = 1)
+                    value = 12, min = 0, max = 24, step = 1),
+        
+        includeMarkdown("documentation.md")
         ),
 
     mainPanel(
